@@ -7,17 +7,18 @@
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
     <fieldset>
 	  <legend>Personal Information</legend>
-	    <div><label>First Name: <input size="100" type="text" name="firstNameField"></label></div>
-		<div><label>Last Name: <input size="100" type="text" name="lastNameField"></label></div>
-        <div><label>Phone Number: <input size="100" type="text" name="phoneField"></label></div>
-        <div><label>Email Address: <input size="100" type="text" name="emailField"></label></div>
+	    <div><label>First Name: <input size="100" type="text" name="first_name_field"></label></div>
+		<div><label>Last Name: <input size="100" type="text" name="last_name_field"></label></div>
+        <div><label>Phone Number: <input size="100" type="text" name="phone_field"></label></div>
+        <div><label>Email Address: <input size="100" type="text" name="email_field"></label></div>
         <div>Identified Gender:</div>
 	    <div>
-          <label>Male <input type="radio" name="genderField" value="male"></label>
-          <label>Female <input type="radio" name="genderField" value="female"></label>
+          <label>Male <input type="radio" name="gender_field" value="male"></label>
+          <label>Female <input type="radio" name="gender_field" value="female"></label>
         </div>
 		<div>Age Requirement: are you 18 years or older?</div>
-		<select>
+		<select name="age_field">
+		  <option>Pick an option</option>
 		  <option>Yes, I am 18 years or older.</option>
 		  <option>No, I am not 18 years or older.</option>
 		</select>
@@ -26,19 +27,19 @@
 	  <legend>Hours of Availability</legend>
 	  <h3>Days Available</h3>
 	  <div>
-	    <div><label>Sunday <input type="checkbox" name="availableField[]" value="sunday"></label></div>
-		<div><label>Monday <input type="checkbox" name="availableField[]" value="monday"></label></div>
-		<div><label>Tuesday <input type="checkbox" name="availableField[]" value="tuesday"></label></div>
-		<div><label>Wednesday <input type="checkbox" name="availableField[]" value="wednesday"></label></div>
-		<div><label>Thursday <input type="checkbox" name="availableField[]" value="thursday"></label></div>
-		<div><label>Friday <input type="checkbox" name="availableField[]" value="friday"></label></div>
-		<div><label>Saturday <input type="checkbox" name="availableField[]" value="saturday"></label></div>
+	    <div><label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label></div>
+		<div><label>Monday <input type="checkbox" name="available_field[]" value="monday"></label></div>
+		<div><label>Tuesday <input type="checkbox" name="available_field[]" value="tuesday"></label></div>
+		<div><label>Wednesday <input type="checkbox" name="available_field[]" value="wednesday"></label></div>
+		<div><label>Thursday <input type="checkbox" name="available_field[]" value="thursday"></label></div>
+		<div><label>Friday <input type="checkbox" name="available_field[]" value="friday"></label></div>
+		<div><label>Saturday <input type="checkbox" name="available_field[]" value="saturday"></label></div>
 	  </div>
 	  <h3>Comments or Other Feedback?</h3>
-	  <textarea name="commentsField"></textarea>
+	  <textarea name="comments_field"></textarea>
 	</fieldset>
-	<input type="hidden" name="hiddenField" value="HENRY_TRAN">
-     <input type="submit" value="Ready to get started?"> <!-- Double check this one to see if submit is necessary or if this needs to be the "call to action". -->
+	<input type="hidden" name="hidden_field" value="HENRY_TRAN">
+     <input type="submit" value="Let's get started!"> <!-- Double check this one to see if submit is necessary or if this needs to be the "call to action". -->
   </form>
   
 </body>
